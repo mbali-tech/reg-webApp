@@ -1,0 +1,38 @@
+<div>
+    <h1>Registration</h1>
+
+    {{#if messages.error}}
+    <div class="error">
+        {{messages.error}}
+    </div>
+    {{/if}}
+
+    {{#if messages.success}}
+    <div class="success">
+        {{messages.success}}
+    </div>
+    {{/if}}
+
+    <div class="valid">
+        <p>Accepted Registration Code: CA, CY, CJ, CK</p>
+        <p>Allowed format: CA 123-321 / CY 344-332 / CK 123456</p>
+    </div>
+
+    <form action="/add" method="post">
+        <input type="text" name="regNumber">
+        <button type="submit">ADD</button>
+    </form>
+
+    {{#if regNumbers}}
+    <div class="display">
+        {{#each regNumbers}}
+        <div class="regPlate">{{regnumber}}</div>
+        {{/each}}
+    </div>
+    {{/if}}
+    {{#unless regNumbers}}
+    <div>
+        <h3>There are no registration numbers</h3>
+    </div>
+    {{/unless}}
+</div>
