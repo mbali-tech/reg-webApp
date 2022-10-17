@@ -36,6 +36,9 @@ const routes = require("./routes")(database)
 app.get("/", routes.index)
 app.post("/add", routes.add)
 
+app.post("/filter", routes.filter)
+app.get("/filter/:town", routes.filtered)
+
 const PORT = process.env.PORT || 4020
 app.listen(PORT, () => {
     console.log("App started at "+PORT)

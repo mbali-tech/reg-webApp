@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+body {
+    background-color: darkgrey;
+    background-image: url("https://www.pexels.com/photo/photo-of-white-rolls-royce-ghost-parked-in-an-alley-3764984/");
+
+}
+
+.space {
+    margin: 10px;
+}
+
+h1,
+p,
+label {
+    font-family: 'Lobster Two', cursive;
+    font-weight: lighter;
+}
+
+#addB {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#resetButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+    background-color: ghostwhite;
+    opacity: 0.9;
+ 
+    text-align: center;
+   
+}
+
+.list-box  {
+    width: 100%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.list-of-plates li {
+    float: left;
+    margin: 5px;
+    padding: 8px;
+    height: 18px;
+    width: 95px;
+    background-color: rgb(233, 233, 215);
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 5%;
+    list-style: none;
+    font-weight: bold;
+}
+
+.succes{
+    color: green;
+}
+
+.warning{
+    color: rgb(239, 234, 74)
+}
+
+.error{
+    color: rgb(193, 44, 17);
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 270px) {
+    .small-input {
+        width: 100px;
+    }
+}

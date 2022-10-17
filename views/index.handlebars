@@ -23,6 +23,17 @@
         <button type="submit">ADD</button>
     </form>
 
+    <h2>Filter registrations by town</h2>
+    <form action="/filter">
+        <select name="town">
+            <option value="all">SHOW ALL</option>
+            {{#each towns}}
+            <option value="{{code}}">{{town}}</option>
+            {{/each}}
+        </select>
+        <button type="submit">FILTER</button>
+    </form>
+
     {{#if regNumbers}}
     <div class="display">
         {{#each regNumbers}}
