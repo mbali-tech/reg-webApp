@@ -7,7 +7,7 @@ const pgPromise = require("pg-promise")({})
 
 const app = express()
 const config = {
-    connectionString: process.env.DATABASE_URL || "postgresql://user:pass@localhost:5432/registration"
+    connectionString: process.env.DATABASE_URL || "postgresql://2007121214@localhost:5432/registration"
 }
 if(app.get("env") === "production"){
     config.ssl = {
