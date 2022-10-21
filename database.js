@@ -25,7 +25,7 @@ module.exports = (db) => {
     }
 
     const getRegNumbersForTown = async (town) => {
-        const results = await db.manyOrNone("SELECT * FROM regNumbers JOIN towns ON towns.id = regNumbers.town_code", [town])
+        const results = await db.manyOrNone("SELECT * FROM regNumbers JOIN towns ON towns.id = regNumbers.town_code WHERE towns.code = $1", [town])
         return results
     }
 

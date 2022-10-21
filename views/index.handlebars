@@ -24,7 +24,7 @@
     </form>
 
     <h2>Filter registrations by town</h2>
-    <form action="/filter">
+    <form action="/filter" method="post">
         <select name="town">
             <option value="all">SHOW ALL</option>
             {{#each towns}}
@@ -35,7 +35,7 @@
     </form>
 
     {{#if regNumbers}}
-    <div class="display">
+    <div class="regNumbers">
         {{#each regNumbers}}
         <div class="regPlate">{{regnumber}}</div>
         {{/each}}

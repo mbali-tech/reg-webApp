@@ -4,11 +4,11 @@ CREATE TABLE IF NOT EXISTS towns (
     town VARCHAR(20) NOT NULL
 );
 
--- INSERT INTO towns (code, town) VALUES 
--- ('CA', 'Cape Town'),
--- ('CJ', 'Paarl'),
--- ('CK', 'Malmesbury'),
--- ('CY', 'Bellville');
+INSERT INTO towns (code, town) VALUES
+('CA', 'Cape Town'),
+('CJ', 'Paarl'),
+('CK', 'Malmesbury'),
+('CY', 'Bellville');
 
 CREATE TABLE IF NOT EXISTS regNumbers (
     id SERIAL PRIMARY KEY,
